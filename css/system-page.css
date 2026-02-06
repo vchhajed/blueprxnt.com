@@ -709,6 +709,120 @@
     }
 }
 
+/* Domains Diagram */
+.domains-diagram {
+    margin: 3rem 0 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.diagram-tagline {
+    font-size: 1.125rem;
+    color: #a1a1aa;
+    margin-bottom: 3rem;
+    line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+    .diagram-tagline {
+        font-size: 1.25rem;
+    }
+}
+
+.domains-svg {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+}
+
+.connector-line {
+    stroke: #14b8a6;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.domain-node {
+    transition: all 200ms ease;
+}
+
+.node-rect {
+    fill: #18181b;
+    stroke: #3f3f46;
+    stroke-width: 1.5;
+    transition: all 200ms ease;
+}
+
+.domain-node:hover .node-rect {
+    fill: #27272a;
+    stroke: #14b8a6;
+}
+
+.node-rect-center {
+    fill: rgba(14, 165, 233, 0.05);
+    stroke: #0ea5e9;
+    stroke-width: 2;
+    transition: all 200ms ease;
+}
+
+.domain-node-center:hover .node-rect-center {
+    fill: rgba(14, 165, 233, 0.1);
+    stroke: #0ea5e9;
+}
+
+.node-title {
+    fill: white;
+    font-size: 18px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .node-title {
+        font-size: 20px;
+    }
+}
+
+.node-desc {
+    fill: #a1a1aa;
+    font-size: 13px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .node-desc {
+        font-size: 14px;
+    }
+}
+
+.node-title-center {
+    fill: white;
+    font-size: 20px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .node-title-center {
+        font-size: 22px;
+    }
+}
+
+.node-desc-center {
+    fill: #a1a1aa;
+    font-size: 14px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .node-desc-center {
+        font-size: 15px;
+    }
+}
+
 /* How the System Is Sequenced Section */
 .sequenced-section {
     padding: 6rem 0;
