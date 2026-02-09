@@ -48,19 +48,19 @@
                 <div class="action-card">
                     <h3 class="action-title">Speaking & Media</h3>
                     <p class="action-description">For keynotes, workshops, podcast interviews, and media inquiries.</p>
-                    <a href="mailto:hello@blueprxnt.com?subject=Speaking Inquiry" class="btn-action">Speaking Inquiry</a>
+                    <a href="#contact-form" class="btn-action" data-service="speaking">Speaking Inquiry</a>
                 </div>
                 <div class="action-card">
                     <h3 class="action-title">Partnerships</h3>
                     <p class="action-description">For collaborations, brand partnerships, or consulting opportunities.</p>
-                    <a href="mailto:hello@blueprxnt.com?subject=Partnership Inquiry" class="btn-action">Partner With Us</a>
+                    <a href="#contact-form" class="btn-action" data-service="partnership">Partner With Us</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <section class="contact-form-section">
+    <section class="contact-form-section" id="contact-form">
         <div class="container">
             <p class="section-label">CONTACT FORM</p>
             <form class="contact-form" id="contactForm">
@@ -155,5 +155,24 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Auto-select service based on quick action button clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceButtons = document.querySelectorAll('.btn-action[data-service]');
+            const serviceSelect = document.getElementById('service');
+
+            serviceButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const serviceValue = this.getAttribute('data-service');
+                    if (serviceSelect && serviceValue) {
+                        // Small delay to allow smooth scroll to complete
+                        setTimeout(() => {
+                            serviceSelect.value = serviceValue;
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

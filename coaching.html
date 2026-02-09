@@ -231,20 +231,101 @@
             <p class="results-label">RESULTS</p>
             <h2 class="results-heading">Trusted by elite athletes, executives, and high performers</h2>
 
-            <div class="testimonials-row">
-                <div class="testimonial-box">
-                    <p class="testimonial-text">"I learned so much from Tik. Learning about my body and learning nutrition has been really beneficial for me coming from college. Learning different techniques to help my body perform better was awesome."</p>
-                    <p class="testimonial-author">— Shane Lemieux, University of Oregon / NFL</p>
-                </div>
+            <!-- Testimonial Tabs -->
+            <div class="testimonial-tabs">
+                <button class="tab-btn active" data-tab="nfl">NFL Athletes</button>
+                <button class="tab-btn" data-tab="college">College Athletes</button>
+                <button class="tab-btn" data-tab="executives">Executives & Professionals</button>
+                <button class="tab-btn" data-tab="south-asians">South Asians</button>
+            </div>
 
-                <div class="testimonial-box">
-                    <p class="testimonial-text">"Pratik is hands down the best nutritionist and sport performance coach I've been around in the 10 years I've been in the NFL."</p>
-                    <p class="testimonial-author">— Rhett Ellison, NFL</p>
-                </div>
+            <!-- NFL Athletes Tab Content -->
+            <div class="tab-content active" data-content="nfl">
+                <div class="testimonials-row">
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">University of Oregon / NFL</span>
+                        <p class="testimonial-text">"I learned so much from Tik. Learning about my body and learning nutrition has been really beneficial for me coming from college. Learning different techniques to help my body perform better was awesome."</p>
+                        <p class="testimonial-author">Shane Lemieux</p>
+                        <p class="testimonial-position">University of Oregon / NFL</p>
+                    </div>
 
-                <div class="testimonial-box">
-                    <p class="testimonial-text">"I've been working with Tik for over 2 years now. He's helped me increase my lean body mass and decrease my body fat percentage. I'm in the best shape of my career."</p>
-                    <p class="testimonial-author">— Nate Solder, NFL</p>
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">10 years in NFL</span>
+                        <p class="testimonial-text">"Pratik is hands down the best nutritionist and sport performance coach I've been around in the 10 years I've been in the NFL."</p>
+                        <p class="testimonial-author">Rhett Ellison</p>
+                        <p class="testimonial-position">NFL</p>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">Best shape of career</span>
+                        <p class="testimonial-text">"I've been working with Tik for over 2 years now. He's helped me increase my lean body mass and decrease my body fat percentage. I'm in the best shape of my career."</p>
+                        <p class="testimonial-author">Nate Solder</p>
+                        <p class="testimonial-position">NFL</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- College Athletes Tab Content -->
+            <div class="tab-content" data-content="college">
+                <div class="testimonials-row">
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">+14 lbs muscle, -4% body fat</span>
+                        <p class="testimonial-text">"In 3-4 months: up 14 pounds, down 4% body fat. Working with him gave me confidence—when you're working with Pratik, you know what you're doing is the right thing."</p>
+                        <p class="testimonial-author">George Fulton</p>
+                        <p class="testimonial-position">D1 Lacrosse, Virginia</p>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">3x client, PRs in every metric</span>
+                        <p class="testimonial-text">"It's the best money I spend every month. You have a friend in your corner, not just some coach checking boxes. I recommend you in a heartbeat."</p>
+                        <p class="testimonial-author">Nima Movassaghi</p>
+                        <p class="testimonial-position">D1 Tennis, Oregon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executives & Professionals Tab Content -->
+            <div class="tab-content" data-content="executives">
+                <div class="testimonials-row">
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">Best shape at 43</span>
+                        <p class="testimonial-text">"Every coach needs a coach. At 43, I'm in the best shape of my life—12-14% body fat without starving myself. He's one of the best at what he does."</p>
+                        <p class="testimonial-author">Erik Korem</p>
+                        <p class="testimonial-position">CEO of AIM7, Former NFL Performance Director</p>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">LDL under 100, no meds</span>
+                        <p class="testimonial-text">"We got my LDL under 100 without medications. He understands the South Asian environment and the challenges our population uniquely faces."</p>
+                        <p class="testimonial-author">Dr. Hirsh Kaveeshvar</p>
+                        <p class="testimonial-position">Neurologist & Business Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- South Asians Tab Content -->
+            <div class="tab-content" data-content="south-asians">
+                <div class="testimonials-row">
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">Results in 4-6 weeks</span>
+                        <p class="testimonial-text">"He understood exactly what is in Indian cuisine... after about four to six weeks I saw immediate results with just dropping body fat. Things I'd never been able to do during Iron Man training."</p>
+                        <p class="testimonial-author">Shekar Sathyanarayana</p>
+                        <p class="testimonial-position">Lawyer & Startup Founder</p>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">Reversed diabetes</span>
+                        <p class="testimonial-text">"I'm down 15 pounds. I'm no longer diabetic. My A1C was so good they kicked me out of the office. He gives you straight answers, not the BS answer."</p>
+                        <p class="testimonial-author">Robert Shahidi</p>
+                        <p class="testimonial-position">Business Owner, Age 60</p>
+                    </div>
+
+                    <div class="testimonial-box">
+                        <span class="testimonial-badge">+22 lbs in first month</span>
+                        <p class="testimonial-text">"In the first month I gained 22 pounds of muscle mass. I went from 125 to 147. In the Indian community, there's not a lot of people encouraging us to build muscle—but it's possible."</p>
+                        <p class="testimonial-author">Sunil Patel</p>
+                        <p class="testimonial-position">CEO & Entrepreneur</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -297,5 +378,31 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // Testimonial Tabs Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Show corresponding content
+                    const targetContent = document.querySelector(`.tab-content[data-content="${targetTab}"]`);
+                    if (targetContent) {
+                        targetContent.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

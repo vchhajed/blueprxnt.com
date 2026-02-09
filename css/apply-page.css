@@ -218,6 +218,7 @@
     font-weight: 600;
     color: white;
     margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .required {

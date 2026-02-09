@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-primary);
     color: white !important;
     padding: var(--spacing-xs) var(--spacing-md);
-    border-radius: var(--radius-lg);
+    border-radius: 2px;
     transition: all var(--transition-base);
 }
 

@@ -14,6 +14,46 @@
     }
 }
 
+.about-hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .about-hero-content {
+        flex-direction: row;
+        gap: 4rem;
+        align-items: flex-start;
+    }
+}
+
+.about-hero-text {
+    flex: 1;
+}
+
+.about-hero-image {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (min-width: 1024px) {
+    .about-hero-image {
+        width: 400px;
+        margin-top: 4rem;
+    }
+}
+
+.about-hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    border: 1px solid #3f3f46;
+    box-shadow: 0 0 40px rgba(14, 165, 233, 0.4), 0 0 80px rgba(14, 165, 233, 0.2);
+}
+
 .about-label {
     font-size: 0.875rem;
     font-weight: 700;
@@ -107,6 +147,21 @@
     margin-bottom: 1rem;
 }
 
+/* Growing Up Grid */
+.growing-up-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .growing-up-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
 @media (min-width: 768px) {
     .section-bold {
         font-size: 1.125rem;
@@ -192,7 +247,7 @@
 .stat-card {
     background-color: #18181b;
     border: 1px solid #3f3f46;
-    border-radius: 0.5rem;
+    border-radius: 2px;
     padding: 1.5rem;
     text-align: center;
 }
@@ -226,7 +281,7 @@
 .results-box {
     background-color: rgba(20, 184, 166, 0.1);
     border: 1px solid rgba(20, 184, 166, 0.3);
-    border-radius: 0.75rem;
+    border-radius: 2px;
     padding: 2rem;
     margin-bottom: 3rem;
 }
@@ -302,7 +357,7 @@
 .cert-card {
     background-color: #18181b;
     border: 1px solid #3f3f46;
-    border-radius: 0.5rem;
+    border-radius: 2px;
     padding: 1.5rem;
 }
 
@@ -349,7 +404,7 @@
 .worked-card {
     background-color: #18181b;
     border: 1px solid #3f3f46;
-    border-radius: 0.5rem;
+    border-radius: 2px;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -491,7 +546,7 @@
 .testimonial-card {
     background-color: #18181b;
     border: 1px solid #3f3f46;
-    border-radius: 1rem;
+    border-radius: 2px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -571,7 +626,7 @@
 .album-item {
     background-color: #18181b;
     border: 1px solid #3f3f46;
-    border-radius: 0.75rem;
+    border-radius: 2px;
     overflow: hidden;
     transition: all 200ms ease;
 }
@@ -645,7 +700,7 @@
     max-width: 90%;
     max-height: 80vh;
     object-fit: contain;
-    border-radius: 0.5rem;
+    border-radius: 2px;
 }
 
 .lightbox-caption {
@@ -684,7 +739,7 @@
     font-size: 2rem;
     cursor: pointer;
     padding: 1rem 1.25rem;
-    border-radius: 0.5rem;
+    border-radius: 2px;
     z-index: 10;
     transition: background 200ms ease;
 }
