@@ -62,6 +62,10 @@
     background-color: #0a0a0a;
 }
 
+.about-section:nth-of-type(even) {
+    background-color: #141414;
+}
+
 @media (min-width: 768px) {
     .about-section {
         padding: 5rem 0;
@@ -139,7 +143,7 @@
 /* Credentials Section */
 .credentials-section {
     padding: 5rem 0;
-    background-color: #0a0a0a;
+    background-color: #141414;
 }
 
 @media (min-width: 768px) {
@@ -373,8 +377,7 @@
 /* Why I Built Blueprxnt Section */
 .why-blueprxnt-section {
     padding: 5rem 0;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.05) 0%, rgba(10, 10, 10, 0) 100%);
-    background-color: #0f1419;
+    background-color: #141414;
 }
 
 @media (min-width: 768px) {
@@ -458,6 +461,245 @@
     .belief-line-bold {
         font-size: 1.25rem;
     }
+}
+
+/* NFL Testimonials Section */
+.testimonials-section {
+    padding: 6rem 0;
+    background-color: #141414;
+}
+
+@media (min-width: 768px) {
+    .testimonials-section {
+        padding: 8rem 0;
+    }
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.testimonial-card {
+    background-color: #18181b;
+    border: 1px solid #3f3f46;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 200ms ease;
+}
+
+@media (min-width: 768px) {
+    .testimonial-card {
+        padding: 2.5rem;
+    }
+}
+
+.testimonial-card:hover {
+    border-color: #0ea5e9;
+    transform: translateY(-4px);
+}
+
+.testimonial-quote p {
+    font-size: 1rem;
+    color: #a1a1aa;
+    line-height: 1.75;
+    font-style: italic;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .testimonial-quote p {
+        font-size: 1.0625rem;
+    }
+}
+
+.testimonial-author {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #3f3f46;
+}
+
+.testimonial-name {
+    font-size: 1.125rem;
+    color: #0ea5e9;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Album Section */
+.album-section {
+    padding: 6rem 0;
+    background-color: #141414;
+}
+
+@media (min-width: 768px) {
+    .album-section {
+        padding: 8rem 0;
+    }
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 640px) {
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .album-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.album-item {
+    background-color: #18181b;
+    border: 1px solid #3f3f46;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: all 200ms ease;
+}
+
+.album-item:hover {
+    border-color: #0ea5e9;
+    transform: translateY(-4px);
+}
+
+.album-item img,
+.album-item video {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .album-item img,
+    .album-item video {
+        height: 300px;
+    }
+}
+
+.album-caption {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+    color: #a1a1aa;
+    font-weight: 500;
+}
+
+.album-divider {
+    margin: 4rem 0 0;
+    padding-top: 3rem;
+    border-top: 1px solid #3f3f46;
+}
+
+.album-sub-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0ea5e9;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .album-sub-heading {
+        font-size: 1.875rem;
+    }
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.lightbox-caption {
+    color: #a1a1aa;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 10;
+    transition: color 200ms ease;
+}
+
+.lightbox-close:hover {
+    color: #0ea5e9;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+    transition: background 200ms ease;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(14, 165, 233, 0.3);
+}
+
+.lightbox-prev {
+    left: 1.5rem;
+}
+
+.lightbox-next {
+    right: 1.5rem;
 }
 
 /* Work With Me CTA Section */
