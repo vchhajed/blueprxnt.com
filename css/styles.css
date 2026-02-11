@@ -2085,7 +2085,7 @@ section {
 
 .what-content-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
     gap: var(--spacing-2xl);
     margin-bottom: var(--spacing-2xl);
 }
@@ -2104,25 +2104,26 @@ section {
 
 .tags-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: var(--spacing-sm);
 }
 
 .tag {
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: 0.75rem 1.25rem;
     background-color: #27272a;
     border: 1px solid var(--color-border);
     border-radius: 2px;
     font-size: var(--font-size-sm);
     color: var(--color-text-primary);
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .result-box {
     background-color: #18181b;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-xl);
-    padding: var(--spacing-2xl);
+    padding: 1.75rem;
 }
 
 .result-label {

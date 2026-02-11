@@ -70,13 +70,19 @@
 
 /* Coaching Levels Section */
 .coaching-levels-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background-color: #141414;
 }
 
 @media (min-width: 768px) {
     .coaching-levels-section {
-        padding: 8rem 0;
+        padding: 5rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .coaching-levels-section {
+        padding: 6rem 0;
     }
 }
 
@@ -343,13 +349,19 @@
 
 /* How to Choose Section */
 .choose-level-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background-color: #0a0a0a;
 }
 
 @media (min-width: 768px) {
     .choose-level-section {
-        padding: 8rem 0;
+        padding: 5rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .choose-level-section {
+        padding: 6rem 0;
     }
 }
 
@@ -425,13 +437,19 @@
 
 /* Results Section */
 .results-section {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background-color: #141414;
 }
 
 @media (min-width: 768px) {
     .results-section {
-        padding: 8rem 0;
+        padding: 5rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .results-section {
+        padding: 6rem 0;
     }
 }
 
@@ -583,14 +601,20 @@
 
 /* Coaching CTA Section */
 .coaching-cta-section {
-    padding: 8rem 0;
+    padding: 5rem 0;
     background-color: #0a0a0a;
     text-align: center;
 }
 
 @media (min-width: 768px) {
     .coaching-cta-section {
-        padding: 10rem 0;
+        padding: 6rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .coaching-cta-section {
+        padding: 7rem 0;
     }
 }
 

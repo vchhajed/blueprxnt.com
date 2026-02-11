@@ -4,13 +4,19 @@
 
 /* Hero Section */
 .about-hero {
-    padding: 6rem 0 4rem;
+    padding: 5rem 0 3rem;
     background-color: #0a0a0a;
 }
 
 @media (min-width: 768px) {
     .about-hero {
-        padding: 8rem 0 5rem;
+        padding: 6rem 0 4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-hero {
+        padding: 7rem 0 5rem;
     }
 }
 
@@ -109,6 +115,12 @@
 }
 
 @media (min-width: 768px) {
+    .about-section {
+        padding: 4.5rem 0;
+    }
+}
+
+@media (min-width: 1024px) {
     .about-section {
         padding: 5rem 0;
     }

@@ -4,7 +4,7 @@
 
 /* Application Section */
 .application-section {
-    min-height: 100vh;
+    min-height: auto;
     background-color: #0a0a0a;
     padding: 3rem 0 4rem;
 }
@@ -12,6 +12,12 @@
 @media (min-width: 768px) {
     .application-section {
         padding: 4rem 0 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .application-section {
+        padding: 5rem 0 6rem;
     }
 }
 
