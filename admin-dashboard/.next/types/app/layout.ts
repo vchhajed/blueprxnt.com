@@ -1,4 +1,4 @@
-// File: C:\Users\hp\Blueprxnt sintra\admin-dashboard\app\layout.tsx
+// File: /Users/vaibhavprakashchhajed/blueprxnt.com/admin-dashboard/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

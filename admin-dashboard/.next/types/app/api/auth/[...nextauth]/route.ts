@@ -1,4 +1,4 @@
-// File: C:\Users\hp\Blueprxnt sintra\admin-dashboard\app\api\auth\[...nextauth]\route.ts
+// File: /Users/vaibhavprakashchhajed/blueprxnt.com/admin-dashboard/app/api/auth/[...nextauth]/route.ts
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 

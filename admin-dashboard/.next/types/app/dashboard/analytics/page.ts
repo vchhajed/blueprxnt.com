@@ -1,4 +1,4 @@
-// File: C:\Users\hp\Blueprxnt sintra\admin-dashboard\app\dashboard\analytics\page.tsx
+// File: /Users/vaibhavprakashchhajed/blueprxnt.com/admin-dashboard/app/dashboard/analytics/page.tsx
 import * as entry from '../../../../../app/dashboard/analytics/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
