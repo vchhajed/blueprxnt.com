@@ -25,6 +25,7 @@ dist/
 build/
 .cache/
 .next/
+admin-dashboard/.next/
 
 # Environment variables
 .env
