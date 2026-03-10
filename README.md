@@ -16,7 +16,7 @@ Blueprxnt sintra/
 
 ## Features
 
-- ✅ Fully responsive design (mobile, tablet, desktop)
+- ✅ Fully responsive design (mobile, tablet, desktop) 
 - ✅ Modern dark theme with sky-blue accents
 - ✅ Smooth scroll navigation
 - ✅ Animated SVG system diagram
